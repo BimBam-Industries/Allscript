@@ -1,7 +1,7 @@
 # Allscript
 A script that installs everything you need to get started with Termux
 
-[logo]: https://github.com/AmmarRex/Allscript/blob/main/Logo.jpg
+![alt text](https://github.com/AmmarRex/Allscript/blob/main/Logo.jpg "Logo Title Text 1")
 
 # Installation
 
