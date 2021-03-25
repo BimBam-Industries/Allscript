@@ -16,3 +16,5 @@ A script that installs everything you need to get started with Termux
 ##  Run the script
 
 `bash allscript.sh`
+
+<button>Click me</button>
