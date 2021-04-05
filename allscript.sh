@@ -3,6 +3,7 @@ pkg install figlet neofetch -y
 pkg install ruby -y 
 pkg install git
 gem install lolcat
+clear
 echo "
 ╭━━━┳╮╭╮╱╱╱╱╱╱╱╱╱╱╱╱╭╮
 ┃╭━╮┃┃┃┃╱╱╱╱╱╱╱╱╱╱╱╭╯╰╮
