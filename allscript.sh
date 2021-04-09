@@ -1,11 +1,12 @@
 #!//data/com.termux/files/usr/bin/bash
-pkg install figlet neofetch -y
-pkg install ruby -y 
-pkg install git
-pkg install zsh
+current_dir=$(pwd)
+pkg install ncurses-utils && clear 
+#vars
+pkg install figlet
+pkg install ruby 
 gem install lolcat
-clear
-echo "
+Clear
+echo"
 ╭━━━┳╮╭╮╱╱╱╱╱╱╱╱╱╱╱╱╭╮
 ┃╭━╮┃┃┃┃╱╱╱╱╱╱╱╱╱╱╱╭╯╰╮
 ┃┃╱┃┃┃┃┃╭━━┳━━┳━┳┳━┻╮╭╯
@@ -16,10 +17,11 @@ echo "
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰╯" | lolcat
 
 
-#!//data/com.termux/files/usr/bin/bash
-current_dir=$(pwd)
-pkg install ncurses-utils && clear 
-#vars
+
+
+
+
+
 black=`tput setaf p`
 blue=`tput setaf 4`
 reset=`tput sgr0`
@@ -33,7 +35,7 @@ clear
 apt install figlet -y
 gem install lolcat
 clear 
-
+figlet -c INSTALLING.... | lolcat
 echo "${black}                  Upgraded ${return}"
 sleep 5
 echo "${blue} Requesting access to storage ${reset}"
@@ -64,7 +66,7 @@ apt install neofetch -y
 pkg install termux-services -y
 pkg install make -y
 pkg install golang -y
-
+echo
 clear
 git clone https://github.com/Towha/termux-sudo 
 cd termux-sudo
@@ -100,7 +102,7 @@ echo -e "${INFO} Making Oh My Zsh BETTER..."
     [[ -z $(grep "autoload -U compinit && compinit" $HOME/.zshrc) ]] && echo "autoload -U compinit && compinit" >> $HOME/.zshrc
     sed -i '/^ZSH_THEME=/c\ZSH_THEME="powerlevel10k/powerlevel10k"' $HOME/.zshrc
     if [ $(uname -o) != Android ]; then
-  sed -i '/^plugins=/c\plugins=(git sudo z command-not-found zsh-syntax-highlighting zsh-autosuggestions zsh-completions)' $HOME/.zshrc
+        sed -i '/^plugins=/c\plugins=(git sudo z command-not-found zsh-syntax-highlighting zsh-autosuggestions zsh-completions)' $HOME/.zshrc
     else
         sed -i '/^plugins=/c\plugins=(git z zsh-syntax-highlighting zsh-autosuggestions zsh-completions)' $HOME/.zshrc
     fi
@@ -114,6 +116,3 @@ clear
 figlet And lastly it is complete 
 sleep 5
 clear
-
-
-
