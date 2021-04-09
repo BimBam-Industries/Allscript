@@ -2,6 +2,7 @@
 pkg install figlet neofetch -y
 pkg install ruby -y 
 pkg install git
+pog install zsh
 gem install lolcat
 clear
 echo "
