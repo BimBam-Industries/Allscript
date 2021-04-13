@@ -5,7 +5,7 @@ A script that installs everything you need to get started with Termux
 
 
 
-### Installs languages like python, rub and more
+### Installs languages like python, ruby and more
 
 
 ### Installs powerlevel10k script and zsh with oh my zsh
