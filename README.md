@@ -14,7 +14,7 @@ A script that installs everything you need to get started with Termux
 
 ###  Clone the repo
 
-```git clone https://github.com/AmmarRex/Allscript```
+```git clone https://github.com/AmmarRex/Allscript.git```
 
 ###  Change directory
 
